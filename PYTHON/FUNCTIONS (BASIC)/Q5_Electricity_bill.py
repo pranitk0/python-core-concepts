@@ -1,15 +1,13 @@
-def calculate_profit_loss(cost_price, selling_price):
-    if selling_price > cost_price:
-        profit = selling_price - cost_price
-        return "Profit of ₹" + str(profit)
-    elif selling_price < cost_price:
-        loss = cost_price - selling_price
-        return "Loss of ₹" + str(loss)
+def calculate_electricity_bill(units):
+    bill = 0
+    if units <= 100:
+        bill = units * 5
+    elif units <= 200:
+        bill = (100 * 5) + ((units - 100) * 7)
     else:
-        return "No Profit No Loss"
+        bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
 
-cp = float(input("Enter Cost Price: "))
-sp = float(input("Enter Selling Price: "))
-
-result = calculate_profit_loss(cp, sp)
-print(result)
+    return bill
+units = int(input("Enter electricity units consumed: "))
+total_bill = calculate_electricity_bill(units)
+print("Total Electricity Bill: ₹", total_bill)
