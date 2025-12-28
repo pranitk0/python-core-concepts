@@ -3,10 +3,11 @@ def greet(name="Guest", msg="Welcome!"):
 
 greet()  
 
-greet("Alice")  
+greet("Pranit")  
 
 greet("Bob", "Hello")  
 
-greet(msg="Good Morning", name="Charlie")  
+greet(msg="Good Morning", name="Raj")  
+
 
  
