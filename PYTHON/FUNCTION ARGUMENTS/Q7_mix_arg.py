@@ -15,4 +15,5 @@ def student_report(name, age, *subjects, **details):
         for key, value in details.items():
             print(f"{key}: {value}")
 
-student_report("Alice", 16, "Math", "Science", "English", grade="A", section="B", roll_no=12)
+student_report("Pranit", 20, "Math", "Science", "English", grade="A", section="B", roll_no=12)
+
